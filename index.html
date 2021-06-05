@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoT</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/index.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <ul class="personajes row list-unstyled">
+        <li class="personaje personaje-dummy col">
+          <div class="card personaje-card">
+            <img src="img/no-one.jpg" alt="" class="foto card-img-top" />
+            <div class="card-body">
+              <h2 class="nombre card-title h4"></h2>
+              <div class="info">
+                <ul class="metadata list-unstyled">
+                  <li>Edad: <span class="edad"></span> años</li>
+                  <li>
+                    Estado:
+                    <i class="icono icono-muerto fas fa-thumbs-down"></i>
+                    <i class="icono icono-vivo fas fa-thumbs-up"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="personaje-overlay">
+                <ul class="metadata list-unstyled">
+                  <li class="datos-anyos">
+                    Años de reinado: <span class="dato"></span>
+                  </li>
+                  <li class="datos-arma">Arma: <span class="dato"></span></li>
+                  <li class="datos-destreza">
+                    Destreza: <span class="dato"></span>
+                  </li>
+                  <li class="datos-peloteo">
+                    Peloteo: <span class="dato"></span>
+                  </li>
+                  <li class="datos-asesora-a">
+                    Asesora a: <span class="dato"></span>
+                  </li>
+                  <li class="datos-sirve-a">
+                    Sirve a: <span class="dato"></span>
+                  </li>
+                </ul>
+                <div class="acciones">
+                  <button class="btn accion accion-hablar">habla</button>
+                  <button class="btn accion accion-morir">muere</button>
+                </div>
+              </div>
+            </div>
+            <i class="emoji"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="comunicaciones">
+      <p class="display-1 mensaje"></p>
+      <img
+        class="foto"
+        src="img/no-one.jpg"
+        alt="Nombre y familia del que habla"
+      />
+    </div>
+  </body>
+</html>
